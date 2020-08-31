@@ -27,6 +27,12 @@ class Student
     DB[:conn].execute("DROP TABLE students")
   end
   
+  def save
+    if self.id
+      self.update
+    else
+      sql =
+  
 
 
 
