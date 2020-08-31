@@ -54,7 +54,10 @@ class Student
     student.save
     student
   end
-
+  
+  def self.new_from_de(row)
+    Student.new(row[0], row[1], row[2])
+  end
 
 
 end
